@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/nombre_id"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/sueldo_id"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Sueldo"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/id_becario">
+
+        <RadioButton
+            android:id="@+id/id_becario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Becario"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/id_consultor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultor"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/id_directivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Directivo"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular sueldo neto"
+        android:textAlignment="center" />
+
+</LinearLayout>
